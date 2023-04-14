@@ -91,7 +91,10 @@ main {
 }
 
 /* text right container */
-
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
 .text-container .rectangle {
   position: absolute;
   height: 670px;
@@ -129,4 +132,20 @@ main {
   text-align: justify;
   left: 1030px;
   right: 56px;
+}
+
+.copy-btn {
+  display: none;
+  position: absolute;
+  background: #E9ECF8;
+  margin-right: 7px;
+  gap: 8px;
+  width: 288px;
+  height: 67px;
+  color: #000000;
+  border-radius: 20px;
+  right: 150px;
+  top: 550px;
+  font-size: 2.0rem;
+  cursor: pointer;
 }

@@ -18,9 +18,16 @@ encryptButton.addEventListener('click', encryptText);
 
 let encryptedText = document.createElement('p');
 encryptedText.classList.add('encrypted-text');
+
+let copybutton = document.createElement('button');
+copybutton.classList.add('copy-btn');
+copybutton.innerText = 'Copy';
+
 textContainer.appendChild(encryptedText);
+textContainer.appendChild(copybutton);
 
 function encryptText() {
+  copybutton.style.display = 'block';
   textImage.style.display = 'none';
   textImageContainer.style.display = 'none';
   encryptedText.textContent = "";
