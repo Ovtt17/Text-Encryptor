@@ -1,0 +1,62 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+.main-section-container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.content-container {
+  width: 90%;
+  padding-left: 0px;
+  margin: 0 auto;
+}
+.content-container #text-content {
+  width: 90%;
+}
+.content-container .btn-container {
+  justify-content: center;
+}
+.content-container p {
+  justify-content: center;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+.text-container .rectangle {
+  top: 800px;
+  width: 90%;
+  left: 20px;
+  margin: 0 auto;
+}
+.text-container .text-img {
+  top: 900px;
+  width: 30%;
+  right: 35%;
+  left: 35%;
+}
+
+
+.text-image-container {
+  top: 1200px;
+  width: 50%;
+  right: 25%;
+  left: 25%;
+}
+
+.encrypted-text {
+  top: 820px;
+  left: 12%;
+  right: 12%;
+}
+
+.copy-btn {
+  top: 1300px;
+  width: 50%;
+  margin-right: 0px;
+  right: 25%;
+  left: 25%;
+}
