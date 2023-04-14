@@ -6,20 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Encrypter</title>
   <link rel="stylesheet" href="./styles.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <nav>
-    a
-  </nav>
-  <main>
-    <section>
-      <div>
+  <header class="icon-container">
+    <a href="#"><img src="./assets/icon.png" alt="alura-icon"></a>
+  </header>
 
-      </div>
-      <div>
+  <main>
+    <section class="main-section-container">
+      
+
+      <div class="content-container">
+        <textarea name="content" id="text-content" cols="30" rows="10" placeholder="Enter the text here"></textarea>
+        <p>
+          <img src="./assets/warning.png" alt="warning"> 
+          Only lowercase letters and no accents
+        </p>
+
+        <div class="btn-container">
+          <button class="encrypt-btn">Encrypt</button>
+          <button class="decrypt-btn">Decrypt</button>
+        </div>
 
       </div>
     </section>
+    <section class="text-container">
+      <picture>
+        <img class="rectangle" src="./assets/rectangle.png">
+        <img class="text-img" src="./assets/textImage.png" alt="girl">
+      </picture>
+      <div class="no-message-found">
+        <h2>No message was found</h2>
+        <p>Enter the text you want to encrypt or decrypt</p>
+      </div>
+    </section>
+    
     <script src="./main.js"></script>
   </main>
 </body>
