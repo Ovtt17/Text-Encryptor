@@ -26,11 +26,13 @@ main {
 .icon-container {
   padding-top: 20px;
   padding-left: 10px;
+  display: flex;
 }
 .icon-container img {
   width: 150px;
   height: 80px;
 }
+
 /* content container */
 .content-container {
   display: flex;
@@ -38,7 +40,7 @@ main {
   padding-left: 130px;
 }
 .content-container #text-content {
-  height: 450px;
+  height: 380px;
   width: 700px;
   margin: 10px;
   padding: 10px;
@@ -63,33 +65,23 @@ main {
 
 .content-container .btn-container {
   display: flex;
+  justify-content: space-around;
 }
-.content-container .btn-container .encrypt-btn {
-  margin-right: 7px;
-  gap: 8px;
-  width: 288px;
-  height: 67px;
-  background: #ff0000;
-  color: #FFFFFF;
-  border-radius: 20px;
-  border-color:#f6ce03;
+.content-container .btn-container .encrypt-btn,
+.content-container .btn-container .decrypt-btn {
+  background: #E9ECF8;
+  border: none;
   cursor: pointer;
+}
+.encrypt-btn .img-encrypt-btn,
+.decrypt-btn .img-decrypt-btn {
+  width: 180px;
+  height: 160px;
+  background: #E9ECF8;
 }
 
-.content-container .btn-container .decrypt-btn {
-  margin-left: 7px;
-  gap: 8px;
-  width: 288px;
-  height: 67px;
-  background: #f6ce03;
-  color: #FFFFFF;
-  border-radius: 20px;
-  border-color: #ff0000;
-  cursor: pointer;
-}
 .content-container .btn-container .encrypt-btn:hover,
 .content-container .btn-container .decrypt-btn:hover{
-  border: 2px solid green;
   opacity: 80%;
 }
 
@@ -140,12 +132,13 @@ main {
 .copy-btn {
   display: none;
   position: absolute;
-  background: #E9ECF8;
+  background: rgb(233, 34, 34);
   margin-right: 7px;
   gap: 8px;
   width: 288px;
   height: 67px;
-  color: #000000;
+  color: #fff;
+  border: 4px solid #FFD700;
   border-radius: 20px;
   right: 150px;
   top: 550px;
@@ -154,6 +147,6 @@ main {
 }
 
 .copy-btn:hover {
-  border: 2px solid green;
-  opacity: 80%;
+  background: #FFD700;
+  border: 4px solid rgb(233, 34, 34);
 }

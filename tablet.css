@@ -16,11 +16,9 @@ main {
 .content-container #text-content {
   width: 90%;
 }
-.content-container .btn-container {
-  justify-content: center;
-}
-.content-container p {
-  justify-content: center;
+.encrypt-btn .img-encrypt-btn,
+.decrypt-btn .img-decrypt-btn {
+  width: 150px;
 }
 .text-container {
   display: flex;
@@ -34,7 +32,7 @@ main {
 }
 .text-container .text-img {
   top: 900px;
-  width: 30%;
+  width: 35%;
   right: 35%;
   left: 35%;
 }
