@@ -37,8 +37,8 @@ function encryptingText () {
   if(textContent.value == '') return;
 
   displaySettings();
+  
   //put the lowerCase and replace the letter.
-
   let words = textContent.value.toLowerCase().replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat").replace(/ames/g, "a");
 
   encryptedTextContainer.innerText = words;
